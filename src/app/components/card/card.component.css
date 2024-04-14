@@ -1,20 +1,3 @@
-/*:root {*/
-/*  --color1: #000000;*/
-/*  --color2: #0000EE;*/
-/*  --color3: #007AFF;*/
-/*  --color4: #00FF15;*/
-/*  --color6: #0F0F0F;*/
-/*  --color7: #CCCCCC;*/
-/*  --color8: #DDFF00;*/
-/*  --color9: #FFAC00;*/
-/*  --color11: #27AE60;*/
-/*  --color14: #00000000;*/
-/*  --color15: #0D0D0D;*/
-/*  --color16: #333333;*/
-/*  --color17: #999999;*/
-/*  --color18: #FFFFFF;*/
-/*}*/
-
 .section-projects__card {
   display: flex;
   gap: 10px;

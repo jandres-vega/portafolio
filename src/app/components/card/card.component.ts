@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {NgOptimizedImage} from "@angular/common";
 
 @Component({
@@ -12,4 +12,6 @@ import {NgOptimizedImage} from "@angular/common";
 })
 export class CardComponent {
 
+  @Input() image:string = '';
+  @Input() nameProject:string = '';
 }

@@ -1,0 +1,17 @@
+.article-profile_container {
+  margin-top: 100px;
+  text-align: center;
+  width: 70%;
+  padding: 20px;
+  h1 {
+    font-size: 30px;
+    font-family: "Instrument Sans", "Instrument Sans Placeholder", serif;
+    color: #FFAC00;
+  }
+  p {
+    font-family: "Instrument Sans", "Instrument Sans Placeholder", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #FFAC00;
+  }
+}
