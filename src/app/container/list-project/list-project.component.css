@@ -1,0 +1,18 @@
+.section-projects {
+  margin-top: 100px;
+  padding: 10px;
+}
+.section-projects__title {
+  font-family: "Instrument Sans", "Instrument Sans Placeholder", sans-serif;
+  font-weight: 900;
+  font-size: 70px;
+  text-align: center;
+  color: #007AFF;
+  margin-top: 10px;
+}
+
+.section-projects__container-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}

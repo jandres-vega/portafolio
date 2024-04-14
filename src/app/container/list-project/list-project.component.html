@@ -1,0 +1,9 @@
+<section class="section-projects" id="proyectos">
+  <h1 class="section-projects__title">PROYECTOS</h1>
+  <div class="section-projects__container-cards">
+    @for(project of listProjects; track project;){
+      <app-card [image]="project.image" [nameProject]="project.name_project"/>
+    }
+  </div>
+</section>
+
