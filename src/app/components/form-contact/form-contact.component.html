@@ -1,0 +1,26 @@
+<form class="footer__form-contact" [formGroup]="formContact" (ngSubmit)="sendFormContact()">
+  <fieldset>
+    <legend>Enviame un correo</legend>
+    <label>Nombre completo:
+      <input formControlName="name" name='name' type='text' placeholder="juan gonzales" required>
+    </label>
+    <span class="footer__form-contact-error" [hidden]="formContact.get('name')?.valid || formContact.get('name')?.pristine">El nombre es requerido *</span>
+    <label>Email:
+      <input formControlName="email" type='email' placeholder="juan@gmail.com" required>
+    </label>
+    @if (formContact.get('email')?.errors ? formContact.get('email')?.errors : ['email']){
+      <span class="footer__form-contact-error" [hidden]="formContact.get('email')?.valid || formContact.get('email')?.pristine">No cumple con el formato de un email*</span>
+    } @else {
+      <span class="footer__form-contact-error" [hidden]="formContact.get('email')?.valid || formContact.get('email')?.pristine">El email es requerido *</span>
+    }
+    <label>Asunto:
+      <input formControlName="assunt" name='asunto' type='text' required>
+    </label>
+    <span class="footer__form-contact-error"  [hidden]="formContact.get('assunt')?.valid || formContact.get('assunt')?.pristine">El asunto es requerido *</span>
+    <label>Mensaje:
+      <textarea formControlName="message" class="msg" name='message' rows="4" cols="50" placeholder="Ingresa tu mensaje aqui" required></textarea>
+    </label>
+    <span class="footer__form-contact-error"  [hidden]="formContact.get('message')?.valid || formContact.get('message')?.pristine">Debes ingresear un mensaje *</span>
+  </fieldset>
+  <input class="btn-send" type="submit" value="Enviar">
+</form>
