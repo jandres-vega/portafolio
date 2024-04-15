@@ -16,3 +16,16 @@
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
 }
+@media screen and (max-width: 800px) {
+  .section-projects__container-cards{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 600px) {
+  .section-projects__container-cards{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .section-projects__title {
+    font-size: 40px;
+  }
+}
